@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="styles/game.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
+  <link rel="stylesheet" href="/styles/style_menu.css">
+</head>
+
+
+<div>
+	<div id="menu">
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+  			<div class="navbar-brand">
+    				<a class="navbar-item" href="https://svswa.org/">
+      					<img src="images/salinas-valley-recycles-vertical-blue-logo.jpg">
+    				</a>
+
+    				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      					<span aria-hidden="true"></span>
+      					<span aria-hidden="true"></span>
+      					<span aria-hidden="true"></span>
+    				</a>
+  			</div>
+
+  			<div id="navbarBasicExample" class="navbar-menu">
+    				<div class="navbar-start">
+      					<a href="index.html" class="navbar-item">Home</a>
+      					<a href="about.html" class="navbar-item">About</a>
+				</div>
+
+  			</div>
+		</nav>
+	</div>
+</div>
+
+<body>
+  <div id="progress">
+    <div id="foodBar"></div>
+  </div>
+
+  <br>
+
+  <div id="materialHolder">
+    <div class="material" id="material1" data-value=1 draggable="true"></div>
+    <div class="material" id="material2" data-value=2 draggable="true"></div>
+    <div class="material" id="material3" data-value=3 draggable="true"></div>
+    <div class="material" id="material4" data-value=4 draggable="true"></div>
+    <div class="material" id="material5" data-value=5 draggable="true"></div>
+  </div>
+
+  <div id="error-card" class="card-container">
+    <div class="card">
+      <h2>Wrong Material!</h2>
+      <p>Try again</p>
+      <button class="close-button">Close</button>
+    </div>
+  </div>
+
+  <div id="finish-card" class="card-container">
+    <div class="card">
+      <h2>Complete!</h2>
+      <p>You finished the landfill's foundation</p>
+      <button class="close-button">Close</button>
+    </div>
+  </div>
+
+  <div>
+    <img src="images/landfill.jpg" id="landfill">
+  </div>
+
+  <script src="scripts/game.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
+  <script src="scripts/menu.js"></script>
+</body>
+
+</html>
